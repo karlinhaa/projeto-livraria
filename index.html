@@ -1,221 +1,153 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraBooks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Online</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-
 </head>
-
 <body>
-    <head class="cabecalho">
-        <div class="container">
-            <input type="checkbox" id="menu" class="conteiner__botao">
-            <label for="menu">
-                <span class="cabecalho__menu-hamburguer container__imagem"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Biblioteca Católica</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Santos</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lita-menu__link">Sagrada Escritura</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lita-menu__link">Catecismo</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Religião</a>
-                </li>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Meus Favoritos</a></li>
+                <li><a href="#">Meu Perfil</a></li>
             </ul>
-            <img src="logo.webp" alt="logo da nossa loja" class="container__imagem">
-        </div>
-        <div class="container">
-            <a href="#"><img src="saofrancisco.jpeg" src="faustina.jpeg" src="sao-miguel-arcanjo.png" alt="Meus favoritos" class="container__imagem"></a>
-            <a href="#"><img src="carrinho-de-compras.png" alt="Carrinhos de compras" class="container__imagem"></a>
-            <a href="#"><img src="perfil-de-usuario.png" alt="Meu perfil" class="container__imagem"></a>
-        </div>
-    </head>
+        </nav>
+        <h1>Já sabe por onde começar?</h1>
+        <p>Encontre livros invríveis para se aprofundar na sua fé católica.</p>
+    </header>
 
-    <section class="banner">
-        <h2 class="banner__titulo">Ja sabe por onde comecar?</h2>
-        <p class="banner__texto">Encontre em nossa estante o que precisa para o seu desenvolvimento!</p>
-        <input type="search" class="banner__pesquisa" placeholder="Qual sera sua proxima leitura?">
-    </section>
-
-    <section class="carrossel">
-        <h2 class="carrossel__titulo">Novos lançamentos</h2>
-        <!--Slider main container -->
-        <div class="swiper">
-            <!--Additional required wrapper -->
-            <div class="swper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="Carlo.jpg"
-                    alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                <div class="swiper-slide"><img src="Terezinha.jpeg"
-                    alt="Livre sobre lideranca em design da alura books"></div>
-                <div class="swiper-slide"><img src="DomBosco.jpeg" alt="livro sobre java" />
+    <main>
+        <section class="lançamentos">
+            <h2>Novos Lançamentos</h2>
+            <div class="book-grid">
+                <div class="book-item">
+                    <img src="Carlo.jpg" alt="Não eu, mas Deus">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div> 
                 </div>
-                <div class="swiper-slide">
-                    <img src="..........." alt="Livro Guia front end" />
+                <div class="book-item">
+                    <img src="oraçãotete.webp" alt="Santa Teresinha do Menino Jesus">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="Imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="............" alt="Livro sobre portugol" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="..........." alt="Livro sobre acessibilidade" />
+                <div class="book-item">
+                    <img src="DomBosco.jpeg" alt="As aventuras de Dom Bosco">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="Imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!--If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-        </div>
-
-        <div class="card">
-            <div class="card__descricao">
-                <div class="descricao">
-                   <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                   <h2 class="descricao__titulo-livro">Combos especiais</h2>
-                   <p class="descricao__texto">
-                    Construindo combos que ajudam a diminuir os gastos do seu bolso.
-                   </p>
+        <section class="combos">
+            <h2>Combos Especiais</h2>
+            <div class="book-grid">
+                <div class="book-item">
+                    <img src="SãoJose.png" alt="Glória e poder de São José">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="Imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div>
                 </div>
-                <img src="SãoJose.png" class="descricao__imagem" />
+                <div class="book-item">
+                    <img src="Comboteresinha.jpeg" alt="Santa teresinha">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="Imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="Sagrado.png" alt="Sagrado Coração de Jesus">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="Imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div>
+                </div>
             </div>
-            <div class="card__botoes">
-                <ul class="botoes">
-                   <li class="botoes__item">
-                     <img src="coracaog.png" alt="Favoritar livro" />
-                   </li>
-                   <li class="botoes__item">
-                     <img src="carrinho-de-compras.png" alt="Adicionar no carrinho e compras" />
-                   </li>
+        </section>
+
+        <section class="mais-vendidos">
+            <h2>Mais Vendidos</h2>
+            <div class="book-grid">
+                <div class="book-item">
+                    <img src="catecismo.jpg" alt="Catecismo">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="Imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="tratado.png" alt="Consagração">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="Imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="biblia.jpg" alt="Sagrada Escrituras">
+                    <div class="sub-images">
+                        <img src="coracaog.png" alt="Imagem adicional 1">
+                        <img src="carrinho-de-compras.png" alt="Imagem adicional 2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="autora-do-mes">
+            <h2>EMILLY VITORIA</h2>
+            <div class="author-section">
+                <img src="emilly.enc" alt="Autora do Mês">
+                <div class="author-text">
+                    <h3><p>Nossa autora é especializada em nos proporcionar os melhores livros e mais buscados pelo público Católico</p></h3>
+                    <p>"Escrevi as minhas melhores esperiências para você e vou compartilhar de maneira muito simples para que você se anime. Acredite em mim, vale a pena!"</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="recentes">
+            <h2>Tópicos Visitados Recentemente</h2>
+            <div class="topics">
+                <a href="#">Santos</a>
+                <a href="#">Teologia</a>
+                <a href="#">Catecismo</a>
+                <a href="#">Sagrada escritura</a>
+                <a href="#">Celebrações Liturgicas</a>
+            </div>
+        </section>
+
+        <section class="novidades">
+            <h2>Fique por Dentro das Novidades</h2>
+            <p>Assine e receba as últimas novidades da livraria.</p>
+            <form action="https://gmail.us20.list-manage.com/subscribe/post" method="POST" target="_blank">
+                <input type="email" name="EMAIL" placeholder="Digite aqui seu gmail" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Livraria Online. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
-                <a href="#" class="botoes__ancora">Saiba mais</a>
-            </div>
+            </nav>
         </div>
-
-    </section>
-
-    <section class="carrossel">
-        <h2 class="carrosel__titulo">Mais vendidos</h2>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slidde"><img src="............."
-                    alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                <div class="swiper-slide"><img src=".............." alt="Livro sobre lideranca em desing da alura books">
-            </div>
-            <div class="swiper-slide"><img src="..............." alt="Livro sobre javascript assertivo da alurabooks">
-            </div>
-            <div class="swiper-slide"><img src="catecismo.jpg" alt="Livro sobre a catequese catolica"></div>
-            <div class="swiper-slides"><img src="tratado.png" alt="Livro de consagracao"></div>
-            <div class="swiper-slide"><img src="biblia.jpg" alt="Livro das sagradas escrituras"></div>
-        </div>
-        
-        <!--If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
-
-    <div class="card">
-    <!-- 1º linha -->
-    <div class="card__descricao">
-        <!-- 1º coluna -->
-        <div class="descricao">
-            <img src="emilly.enc">Avaliação 5 estrelas">
-            <h3 class="descricao__titulo">Autora do Mês</h3>
-            <h2 class="descricao__titulo-livro">Emilly Vitoria</h2>
-            <p class="descricao__texto">Analista de sistema e escritora, Emilly é especialista em Front-End.
-            </p>
-        </div>
-        <!-- 2º coluna -->
-        <img src="............" class="descricao__imagem">
-    </div>
-
-    <!-- 2º linha -->
-    <div class="card__botoes">
-        <!-- 1º coluna -->
-        <ul class="botoes">
-            <li class="botoes__item"><img src="coracaog.png" alt="Favoritar livro"></li>
-            <li class="botoes__item"><img src="carrinho-de-compras.png" alt="Adicionar no carrinho de compras"></li>
-        </ul>
-        <!-- 2º coluna -->
-        <a href="#" class="botoes__ancora">Saiba mais</a>
-    </div>
-
-
-
-
-    </section>
-
-    <section class="topicos">
-        <h2 class="topicos__titulo">TÓPICOS VIITADOS RECENTEMENTE</h2>
-        <ul class="topicos__lista">
-            <li class="topicos__item"><a href="#" class="topicos__link">Teologia</a></li>
-            <li class="topicos__item">
-                <a href="#" class="topicos__link">filosofia Católica</a>
-            </li>
-            <li class="topicos__item">
-                <a href="#" class="topicos__link">Doutrina</a>
-            </li>
-            <li class="topicos__item">
-                <a href="#" class="topicos__link">Novena</a>
-            </li>
-            <li class="topicos__item">
-                <a href="#" clas="topicos__link">Celebrações liturgicas</a>
-            </li>
-            <li class="topicos__item">
-                <a href="#" class="tópicos__link">Catequese</a>
-            </li>
-            <li class="topicos__item">
-                <a href="#" class="topicos__link">Magisterio</a>
-            </li>
-            <li class="topicos__item">
-                <a href="#" class="topicos__link">Sagrada tradição</a>
-            </li>
-        </ul>
-    </section>
-
-    <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">
-            Atualizações de e-books, novos livros, promoções e outros.
-        </p>
-        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
-    </section>
-
-    <hr />
-
-    <footer class="rodape">
-        <h2 class="rodape__titulo">Grupo Alura</h2>
     </footer>
-
-    <script src=""></script>
-    <script>
-        const swiper = new Swiper(".swiper", {
-            spaceBetween: 10,
-            slidePerView: 3,
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets",
-            },
-        });
-    </script>
 </body>
-
 </html>
+        
